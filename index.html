@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>대학생을 위한 중고거래 플랫폼</title>
+
+  <link rel="icon" href="./images/logo.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./css/common.css">
+
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+</head>
+<body?>
+
+  <!--HEADER-->
+  <header>
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="" alt="">
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="signin">로그인</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">나의 거래내역</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">채팅</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">문의</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">중고거래 상품</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>중고거래 상품 목록</h4>
+                  <ul>
+                    <li>학생</li>
+                    <li>---</li>
+                    <li>---</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>디지털</h4>
+                  <ul>
+                    <li>공학용 계산기</li>
+                    <li>전공서적</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>남성</h4>
+                  <ul>
+                    <li>대학 - 남성을 위한 물품</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>여성</h4>
+                  <ul>
+                    <li>대학 - 여성을 위한 물품</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>나에게 필요한 물품을 카테고리에서 확인 해보세요</h4>
+                <p>대학생을 위한 중고거래 플랫폼(가제)가 도와드립니다!</p>
+                <h4>즐거운 거래를 하기 위해 주의할 점</h4>
+                <p>욕설, 비방 , 거래물픔 외 게시물을 올리지 말아주세요!</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">인기매물</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>음료</h4>
+                  <ul>
+                    <li>콜드 브루</li>
+                    <li>브루드 커피</li>
+                    <li>에스프레소</li>
+                    <li>프라푸치노</li>
+                    <li>블렌디드 음료</li>
+                    <li>스타벅스 피지오</li>
+                    <li>티(티바나)</li>
+                    <li>기타 제조 음료</li>
+                    <li>스타벅스 주스(병음료)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>푸드</h4>
+                  <ul>
+                    <li>베이커리</li>
+                    <li>케익</li>
+                    <li>샌드위치 & 샐러드</li>
+                    <li>따뜻한 푸드</li>
+                    <li>과일 & 요거트</li>
+                    <li>스낵 & 미니 디저트</li>
+                    <li>아이스크림</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>상품</h4>
+                  <ul>
+                    <li>머그</li>
+                    <li>글라스</li>
+                    <li>플라스틱 텀블러</li>
+                    <li>스테인리스 텀블러</li>
+                    <li>보온병</li>
+                    <li>액세서리</li>
+                    <li>커피 용품</li>
+                    <li>패키지 티(티바나)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>카드</h4>
+                  <ul>
+                    <li>실물카드</li>
+                    <li>e-Gift 카드</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴 이야기</h4>
+                  <ul>
+                    <li>콜드 브루</li>
+                    <li>스타벅스 티바나</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>스타벅스 티바나</h4>
+                <p>다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">생활용품</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>매장 찾기</h4>
+                  <ul>
+                    <li>퀵 검색</li>
+                    <li>지역 검색</li>
+                    <li>My 매장</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장 이야기</h4>
+                  <ul>
+                    <li>청담스타</li>
+                    <li>티바나 인스파이어드 매장</li>
+                    <li>파미에파크</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>매장 찾기</h4>
+                <p>보다 빠르게 매장을 찾아보세요.</p>
+                <h4>청담스타</h4>
+                <p>스타벅스 1,000호점인 청담스타점을 만나보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">도서</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>지역 사회 참여 활동</h4>
+                  <ul>
+                    <li>회망배달 캠페인</li>
+                    <li>재능기부 카페 소식</li>
+                    <li>커뮤니티 스토어</li>
+                    <li>청년인재 양성</li>
+                    <li>우리 농산물 사랑 캠페인</li>
+                    <li>우리 문화 지키기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>환경보호 활동</h4>
+                  <ul>
+                    <li>환경 발자국 줄이기</li>
+                    <li>일회용 컵 없는 매장</li>
+                    <li>커피 원두 재활용</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>윤리 구매</h4>
+                  <ul>
+                    <li>윤리적 원두 구매</li>
+                    <li>공정무역 인증</li>
+                    <li>커피 농가 지원 활동</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>글로벌 사회 공헌</h4>
+                  <ul>
+                    <li>윤리경영 보고서</li>
+                    <li>스타벅스 재단</li>
+                    <li>지구촌 봉사의 달</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>커피원두 재활용</h4>
+                <p>스타벅스 커피 원두를 재활용 해보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">아이템</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>마이 스타벅스 리워드</h4>
+                  <ul>
+                    <li>마이 스타벅스 리워드 소개</li>
+                    <li>등급 및 혜택</li>
+                    <li>스타벅스 별</li>
+                    <li>자주하는 질문</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>스타벅스 카드</h4>
+                  <ul>
+                    <li>스타벅스 카드 소개</li>
+                    <li>스타벅스 카드 갤러리</li>
+                    <li>등록 및 조회</li>
+                    <li>충전 및 이용안내</li>
+                    <li>분실신고/환불신청</li>
+                    <li>자주하는 질문</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>스타벅스 카드 e-Gift</h4>
+                  <ul>
+                    <li>스타벅스 카드 e-Gift 소개</li>
+                    <li>이용안내</li>
+                    <li>선물하기</li>
+                    <li>자주하는 질문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>스타벅스 카드 등록하기</h4>
+                <p>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <a href="./html/list.html" class="text-c"><div class="item__name">목록 한번에 보기</div></a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--BADGES-->
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge3.jpg" alt="Badge" />
+      </div>
+      <div class="badge">
+        <img src="/images/logo.png" alt="Badge" width="100%"height="50px"/>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="notice">
+
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <span class="material-icons">add_circle</span>
+          </a>
+        </div>
+
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion open">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--PROMOTION-->
+    <div class="promotion">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+
+    </div>
+  </section>
+
+       <!-- 온보딩 -->
+       <section class="youtube">
+        <div class="youtube__area">
+          <div id="player"></div>
+        </div>
+        <div class="youtube__cover"></div>
+        <div class="inner">
+  
+    
+        </div>
+      </section>
+
+      
+</body>
+</html>
