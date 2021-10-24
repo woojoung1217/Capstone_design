@@ -1,0 +1,26 @@
+
+.new-accountpage {
+  display: block;
+  width: 100%;
+  height: 3000px;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.new-accountpage .new-account {
+  width: 60%;
+  height: 3000px;
+  background-color: seashell;
+}
+.new-accountpage .new-account .create-account {
+  width: 100%;
+  height: 300px;
+  background-color:  #ddd;
+}
+.new-accountpage .new-account .create-account h2{
+  font-size: 20px;
+  color: #000;
+  width: 300px;
+  height: 300px;
+}

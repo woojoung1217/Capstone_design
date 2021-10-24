@@ -297,23 +297,16 @@ header .text-c{
 
 /* 인보딩 대략적인 홍보  */
 
-.contents-inbording{
-width: 100%;
-height: 900px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
 
 #result {
   position: relative;
   width: 100%;
-  height: 1000px;
-  overflow: scroll;
+  height: 1700px;
   background: #f8f9fa;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 #result .result-container {
@@ -322,8 +315,9 @@ align-items: center;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin-bottom: 700px;
 }
-#result .result-containe .result-wrap {
+#result .result-container .result-wrap {
   padding: 0 40px;
   display: flex;
   justify-content: center;
@@ -342,14 +336,17 @@ align-items: center;
 #result .result-container .result-wrap .contents{
   width: 100%;
   height: 700px;
-  background-color: royalblue;
+  background-color: #ddd;
   display: flex;
   justify-content:space-around;
   align-items:baseline;
   flex-wrap: wrap;
+  overflow: scroll;
+  border-bottom:  1px solid #fff;
+  border-radius: 30px;
 }
 
-.result-items {
+#result .result-container .result-wrap .contents .result-items{
   width: 200px;
   height: 200px;
   border:1px solid #ddd;
@@ -357,6 +354,23 @@ align-items: center;
   margin-top: 20px;
   border-radius: 30px;
 }
-#result .result-container .result-wrap .contents .result-items{
-  
+
+#result .result-container .morebutton {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+#result .result-container .morebutton .more-text{
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #868e96;
+  cursor: pointer;
+}
+#result .result-container .morebutton .more-text :hover .result-container{
+  height: 3000px;
+}
+
+
