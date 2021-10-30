@@ -101,3 +101,39 @@ label {
   background-color: #f0ad4e;
   border-color: #eea236;
 }
+
+
+footer{
+    background-color: #eee  ;
+    border-top: 1px solid #333;
+  
+  }
+  
+  footer .inner{
+    padding: 40px 0 60px 0;
+  }
+  
+  footer .menu{
+    display: flex;
+    justify-content: center;
+  }
+  footer .menu li{
+    position: relative;
+  }
+  footer .menu li::before{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #555;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: -1px;
+    margin: auto;
+  }
+
+  footer .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
