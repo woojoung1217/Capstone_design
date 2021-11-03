@@ -13,7 +13,7 @@ var tag = document.createElement('script');
           playerVars: {
             autoplay : true, //자동재생 유무
             loop : true,     // 반복 재생 유무
-            playlist : 'jxdQh7vs4Ls'            
+            playlist : 'c2wF2jBre4c'            
           },
           events:{
             onReady : function(event) {

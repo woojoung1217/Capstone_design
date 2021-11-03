@@ -181,7 +181,7 @@ body{
     transition: width .4s;
   }
   header .sub-menu .search input:focus {
-    width: 190px;
+    width: 300px;
     border-color: #669900;
   }
   
